@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parentGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+    "textGridArea"
+    "svgGridArea"
+}
+.textGridArea{
+    text-align: center;
+    grid-area: "textGridArea";
+    justify-self: center;
+    align-self: end;
+}
+
+.svgGridArea{
+    grid-area: "svgGridArea";
+    justify-self: center;
+    align-self: start;
+}
+
+#container {
+    width: 1000px;
+    height: auto;
+
+
+}
+svg{
+    width: 50%;
+}
+
+p{
+    color: #8a8a8a;
+}
